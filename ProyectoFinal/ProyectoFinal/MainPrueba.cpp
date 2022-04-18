@@ -168,7 +168,9 @@ int main()
 	Model Piso((char*)"Models/Esfera/Piso.obj");
 	Model Esfera((char*)"Models/Esfera/Esfera.obj");
 	Model Box((char*)"Models/Box/Box.obj");
+
 	Model GreenGrass((char*)"Models/GreenGrass/GreenGrass.obj");
+	Model PurpleFence((char*)"Models/PurpleFence/PurpleFence.obj");
 
 	// First, set the container's VAO (and VBO)
 	GLuint VBO, VAO;
@@ -329,6 +331,16 @@ int main()
 		//model = glm::scale(model, glm::vec3(50000.0f, 50000.0f, 50000.0f));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activarTransparencia"), 0);
 		GreenGrass.Draw(lightingShader);
+
+		// -------------------------- PURPLE FENCE ---------------------------------
+
+		view = camera.GetViewMatrix();
+		model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(32.0f, 0.0f, 32.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activarTransparencia"), 0);
+		PurpleFence.Draw(lightingShader);
+
 
 		// -------------------------- COLOCANDO ESFERAS ---------------------------------
 
