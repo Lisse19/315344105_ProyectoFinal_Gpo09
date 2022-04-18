@@ -59,6 +59,8 @@ uniform DirLight dirLight;
 uniform PointLight pointLights[NUMBER_OF_POINT_LIGHTS];
 uniform SpotLight spotLight;
 uniform Material material;
+uniform int activarTransparencia;
+uniform vec4 colorAlpha;
 
 // Function prototypes
 vec3 CalcDirLight( DirLight light, vec3 normal, vec3 viewDir );
@@ -84,9 +86,10 @@ void main( )
     result += CalcSpotLight( spotLight, norm, FragPos, viewDir );
     
 	
-    color = vec4( result,texture( material.diffuse, TexCoords).rgb );
-	  if(color.a < 0.1 && trans>0)
-        discard;
+    color = vec4(colorAlpha)*vec4( result,texture(material.diffuse, TexCoords).rgb);
+    if(color.a < 0.1 && activarTransparencia == 1) {
+             discard;
+     }
 }
 
 // Calculates the color when using a directional light.
