@@ -1,0 +1,182 @@
+newmtl house_initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Gravel023_1K_AmbientOcclusion.jpg
+Ni 1.00
+newmtl lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood082_1K_Color.jpg
+Ni 1.00
+newmtl lambert39SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric060_1K_Color.jpg
+Ni 1.00
+newmtl lambert40SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Tiles097_1K_Color.jpg
+Ni 1.00
+newmtl lambert61SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood081_1K_Color.jpg
+Ni 1.00
+newmtl lambert62SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric060_1K_Color.jpg
+Ni 1.00
+newmtl lambert63SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric060_1K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert20SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert21SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert22SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert23SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert24SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert25SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert26SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert27SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert30SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert31SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert33SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert34SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert35SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert37SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
+newmtl windowsazul_lambert38SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Fabric003_2K_Color.jpg
+Ni 1.00
