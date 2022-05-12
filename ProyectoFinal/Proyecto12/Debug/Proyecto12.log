@@ -1,10 +1,5 @@
 ﻿  TimmysHouse.cpp
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(202,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(230,21): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
-          with
-          [
-              T=float
-          ]
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(203,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(231,21): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
           with
           [
@@ -15,13 +10,18 @@ C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto
           [
               T=float
           ]
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(421,25): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(552,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(553,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(557,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(558,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(560,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(561,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(233,21): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(414,23): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(544,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(545,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(549,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(550,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(552,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Proyecto12\TimmysHouse.cpp(553,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
 soil2-debug.lib(etc1_utils.obj) : warning LNK4099: no se encontró PDB '' con 'soil2-debug.lib(etc1_utils.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
 soil2-debug.lib(image_DXT.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(image_DXT.obj)' o en 'C:\Users\Lisette HG\Desktop\315344105_ProyectoFinal_Gpo09\ProyectoFinal\Debug\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración

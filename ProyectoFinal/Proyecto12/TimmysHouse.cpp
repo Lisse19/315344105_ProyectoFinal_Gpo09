@@ -167,6 +167,7 @@ int main()
 	Model Computer((char*)"Models/Computer/computer.obj");
 	Model BrokenComputer((char*)"Models/Computer/broken_computer.obj");
 	Model Carpet((char*)"Models/Carpet/carpet.obj");
+	Model Door((char*)"Models/House/door.obj");
 
 	//Model Computer((char*)"Models/Computer/computer.obj");
 
@@ -379,13 +380,17 @@ int main()
 		BrokenComputer.Draw(Anim);
 		glBindVertexArray(0);
 
-		//// -------------------------------------------------------------------------------------------- Chair
+		//// -------------------------------------------------------------------------------------------- Carpet
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Carpet.Draw(Anim);
 		glBindVertexArray(0);
 
-
+		//// -------------------------------------------------------------------------------------------- Carpet
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Door.Draw(Anim);
+		glBindVertexArray(0);
 
 		//// -------------------------------------------------------------------------------------------- Shelf
 
@@ -405,35 +410,22 @@ int main()
 		FishHouse.Draw(Anim);
 		glBindVertexArray(0);*/
 
-		//Anim.Use();
-		//tiempo = glfwGetTime();
-		//modelLoc = glGetUniformLocation(Anim.Program, "model");
-		//viewLoc = glGetUniformLocation(Anim.Program, "view");
-		//projLoc = glGetUniformLocation(Anim.Program, "projection");
-		// Set matrices
-		/*glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));*/
-		//glUniform1f(glGetUniformLocation(Anim.Program, "time"), tiempo);
-
-
-		Anim2.Use();
-		tiempoSV = glfwGetTime();
-		modelLoc = glGetUniformLocation(Anim2.Program, "model");
-		viewLoc = glGetUniformLocation(Anim2.Program, "view");
-		projLoc = glGetUniformLocation(Anim2.Program, "projection");
+		Anim.Use();
+		tiempo = glfwGetTime();
+		modelLoc = glGetUniformLocation(Anim.Program, "model");
+		viewLoc = glGetUniformLocation(Anim.Program, "view");
+		projLoc = glGetUniformLocation(Anim.Program, "projection");
 		// Set matrices
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1f(glGetUniformLocation(Anim2.Program, "time"), tiempoSV);
+		glUniform1f(glGetUniformLocation(Anim.Program, "time"), tiempo);
 
 		model = glm::mat4(1); //Dibujar matriz
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); //Avisar al shader del cambio
-		SV.Draw(Anim2);
+		BrokenComputer.Draw(Anim);
 
 		glBindVertexArray(0);
-
 
 
 		// Swap the screen buffers
