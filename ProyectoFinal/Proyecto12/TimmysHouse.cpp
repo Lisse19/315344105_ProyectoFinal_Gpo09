@@ -171,7 +171,7 @@ int main()
 
 	//Model Computer((char*)"Models/Computer/computer.obj");
 
-	Model SV((char*)"Models/Sea/salvavidas.obj");
+	//Model SV((char*)"Models/Sea/salvavidas.obj");
 
 
 	// First, set the container's VAO (and VBO)
