@@ -157,11 +157,11 @@ int main()
 	Model Grass((char*)"Models/Grass/grass.obj");
 	Model House((char*)"Models/House/house.obj");
 	Model Fence((char*)"Models/Fence/fence.obj");
-	
-	/*Model Front_Door((char*)"Models/Front_Door/front_door.obj");
-	Model InsideDoor((char*)"Models/Inside_Room/inside_room.obj");
-	Model Bed_Room((char*)"Models/Bed_Room/bed_room.obj");*/
-	//Model Bed_Computer((char*)"Models/Bed_Computer/bed_computer.obj");
+	Model WallInside((char*)"Models/WallInside/wallinside.obj");
+	Model Bed((char*)"Models/Bed/bed.obj");
+	Model Shelf((char*)"Models/Shelf/shelf.obj");
+
+	//Model Computer((char*)"Models/Computer/computer.obj");
 
 	Model SV((char*)"Models/Sea/salvavidas.obj");
 
@@ -325,24 +325,23 @@ int main()
 		House.Draw(Anim);
 		glBindVertexArray(0);
 
-		//// -------------------------------------------------------------------------------------------- Front Door
-		//model = glm::mat4(1);
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Front_Door.Draw(Anim);
-		//glBindVertexArray(0);
-
-		//// -------------------------------------------------------------------------------------------- Front Door
-		//model = glm::mat4(1);
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//InsideDoor.Draw(Anim);
-		//glBindVertexArray(0);
-
-		//// -------------------------------------------------------------------------------------------- Front Door
-		/*model = glm::mat4(1);
+		//// -------------------------------------------------------------------------------------------- Wall Inside
+		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		Bed_Computer.Draw(Anim);
-		glBindVertexArray(0);*/
+		WallInside.Draw(Anim);
+		glBindVertexArray(0);
 
+		//// -------------------------------------------------------------------------------------------- Wall Inside
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Bed.Draw(Anim);
+		glBindVertexArray(0);
+
+		//// -------------------------------------------------------------------------------------------- Wall Inside
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Shelf.Draw(Anim);
+		glBindVertexArray(0);
 
 		//Anim.Use();
 		//tiempo = glfwGetTime();
