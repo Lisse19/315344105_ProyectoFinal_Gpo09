@@ -160,6 +160,10 @@ int main()
 	Model WallInside((char*)"Models/WallInside/wallinside.obj");
 	Model Bed((char*)"Models/Bed/bed.obj");
 	Model Shelf((char*)"Models/Shelf/shelf.obj");
+	Model FishHouse((char*)"Models/FishHouse/fish_house.obj");
+	Model Painting((char*)"Models/Painting/painting.obj");
+	Model Table((char*)"Models/Table/table.obj");
+	Model Chair((char*)"Models/Chair/chair.obj");
 
 	//Model Computer((char*)"Models/Computer/computer.obj");
 
@@ -275,7 +279,7 @@ int main()
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLight.outerCutOff"), glm::cos(glm::radians(15.0f)));
 
 		// Set material properties
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 16.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 5.0f);
 
 		// Create camera transformations
 		glm::mat4 view;
@@ -307,7 +311,6 @@ int main()
 
 		// -------------------------------------------------------------------------------------------- Greem Grass 
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(0.0f,0.1f,0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Grass.Draw(Anim);
 		glBindVertexArray(0);
@@ -331,17 +334,53 @@ int main()
 		WallInside.Draw(Anim);
 		glBindVertexArray(0);
 
-		//// -------------------------------------------------------------------------------------------- Wall Inside
+		//// -------------------------------------------------------------------------------------------- Bed
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Bed.Draw(Anim);
 		glBindVertexArray(0);
 
-		//// -------------------------------------------------------------------------------------------- Wall Inside
+		//// -------------------------------------------------------------------------------------------- Shelf
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Shelf.Draw(Anim);
 		glBindVertexArray(0);
+
+		//// -------------------------------------------------------------------------------------------- Painting
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Painting.Draw(Anim);
+		glBindVertexArray(0);
+
+		//// -------------------------------------------------------------------------------------------- Table
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Table.Draw(Anim);
+		glBindVertexArray(0);
+
+		//// -------------------------------------------------------------------------------------------- Table
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Chair.Draw(Anim);
+		glBindVertexArray(0);
+
+		//// -------------------------------------------------------------------------------------------- Shelf
+
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(5.0f, 1.0f, 5.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activarTransparencia"), 0);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.5f);
+		FishHouse.Draw(lightingShader);
+		glDisable(GL_BLEND);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
+
+		/*model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		FishHouse.Draw(Anim);
+		glBindVertexArray(0);*/
 
 		//Anim.Use();
 		//tiempo = glfwGetTime();

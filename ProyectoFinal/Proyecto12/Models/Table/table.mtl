@@ -1,0 +1,11 @@
+newmtl MilesDeskWithFile1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd MilesDeskWithFile_Diffuce.tga
+map_Ka MilesDeskWithFile_Diffuce.tga
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks MilesDeskWithFile_SPEC.tga
+Ns 10.00
