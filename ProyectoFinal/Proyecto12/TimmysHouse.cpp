@@ -164,6 +164,9 @@ int main()
 	Model Painting((char*)"Models/Painting/painting.obj");
 	Model Table((char*)"Models/Table/table.obj");
 	Model Chair((char*)"Models/Chair/chair.obj");
+	Model Computer((char*)"Models/Computer/computer.obj");
+	Model BrokenComputer((char*)"Models/Computer/broken_computer.obj");
+	Model Carpet((char*)"Models/Carpet/carpet.obj");
 
 	//Model Computer((char*)"Models/Computer/computer.obj");
 
@@ -358,11 +361,31 @@ int main()
 		Table.Draw(Anim);
 		glBindVertexArray(0);
 
-		//// -------------------------------------------------------------------------------------------- Table
+		//// -------------------------------------------------------------------------------------------- Chair
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Chair.Draw(Anim);
 		glBindVertexArray(0);
+
+		//// -------------------------------------------------------------------------------------------- Chair
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Computer.Draw(Anim);
+		glBindVertexArray(0);
+
+		//// -------------------------------------------------------------------------------------------- Chair
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		BrokenComputer.Draw(Anim);
+		glBindVertexArray(0);
+
+		//// -------------------------------------------------------------------------------------------- Chair
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Carpet.Draw(Anim);
+		glBindVertexArray(0);
+
+
 
 		//// -------------------------------------------------------------------------------------------- Shelf
 
